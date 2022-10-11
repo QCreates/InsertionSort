@@ -1,0 +1,11 @@
+
+#!/bin/bash
+
+INPUT=./time.txt
+
+for i in {329..454}; do notequal="(($i + 1) % 6)";
+			if [[ ${notequal} -ne ${x} ]];then
+			   line="$(sed -n ${i}p time.txt)"
+			   echo $line
+			fi			
+done
